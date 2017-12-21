@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeWindowVC" customModule="EgglerPool" customModuleProvider="target">
+            <connections>
+                <outlet property="dayButton" destination="8dN-iv-9lZ" id="WyR-jz-Y0V"/>
+                <outlet property="middleBar" destination="JKW-ad-go6" id="PkQ-ZV-PeQ"/>
+                <outlet property="setEarliestButton" destination="4WB-Jn-t7D" id="L52-g6-XBx"/>
+                <outlet property="setLatestButton" destination="5eb-Ws-upj" id="flV-CI-mHi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="564" height="87"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WB-Jn-t7D">
+                    <rect key="frame" x="8" y="35" width="82" height="44"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" title="6:00 am">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="setEarliestButtonPressed:" destination="-1" eventType="touchUpInside" id="IHn-0I-jDz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eb-Ws-upj">
+                    <rect key="frame" x="474" y="35" width="82" height="44"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" title="8:00 am">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="setLatestButtonPressed:" destination="-1" eventType="touchUpInside" id="ogB-O3-hRJ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKW-ad-go6">
+                    <rect key="frame" x="98" y="56" width="368" height="3"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="2gP-ys-yqU"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dN-iv-9lZ">
+                    <rect key="frame" x="231.5" y="4" width="102" height="44"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" title="Fri, Oct 13">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8dN-iv-9lZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="8fD-JV-9Fu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4WB-Jn-t7D" secondAttribute="bottom" constant="8" id="YhV-5A-U1P"/>
+                <constraint firstItem="5eb-Ws-upj" firstAttribute="centerY" secondItem="4WB-Jn-t7D" secondAttribute="centerY" id="eQG-Tr-LcA"/>
+                <constraint firstItem="4WB-Jn-t7D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="eX4-2W-8B5"/>
+                <constraint firstItem="JKW-ad-go6" firstAttribute="top" secondItem="8dN-iv-9lZ" secondAttribute="bottom" constant="8.5" id="fiR-Ul-rkt"/>
+                <constraint firstItem="5eb-Ws-upj" firstAttribute="leading" secondItem="JKW-ad-go6" secondAttribute="trailing" constant="8" id="oEs-lt-d5b"/>
+                <constraint firstItem="JKW-ad-go6" firstAttribute="leading" secondItem="4WB-Jn-t7D" secondAttribute="trailing" constant="8" id="odu-JT-FdH"/>
+                <constraint firstItem="JKW-ad-go6" firstAttribute="centerY" secondItem="4WB-Jn-t7D" secondAttribute="centerY" id="pDY-DP-7Yb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5eb-Ws-upj" secondAttribute="trailing" constant="8" id="wa1-qK-Nrx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-24" y="-180.5"/>
+        </view>
+    </objects>
+</document>
