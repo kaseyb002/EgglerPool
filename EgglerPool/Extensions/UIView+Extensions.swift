@@ -19,6 +19,16 @@ extension UIView {
         }
     }
     
+    func drawCardShadow() {
+        layer.cornerRadius = 5
+        layer.shadowOffset = CGSize(width: 0.0, height: 0.5)
+        let path = UIBezierPath(rect: bounds)
+        layer.shadowPath = path.cgPath
+        layer.shadowOpacity = 0.5
+        layer.shadowRadius = 2.0
+        layer.masksToBounds = false
+    }
+    
     func fadeIn(duration: Double = 0.3) {
         alpha = 0.0
         UIView.animate(withDuration: duration) {

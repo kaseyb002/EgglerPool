@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>For tracking ride.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>For finding drivers in your area.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>For finding drivers in your area.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -37,11 +43,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>For tracking delivery process.</string>
-    <key>NSLocationUsageDescription</key>
-    <string>For finding drivers in your area.</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>For finding drivers in your area.</string>
 </dict>
 </plist>

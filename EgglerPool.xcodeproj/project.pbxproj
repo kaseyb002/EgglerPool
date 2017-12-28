@@ -13,7 +13,7 @@
 		031D81381FBCC8810094F598 /* TimesTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031D81361FBCC8810094F598 /* TimesTableVC.xib */; };
 		031D813B1FBCCC710094F598 /* TimesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D81391FBCCC710094F598 /* TimesTVCell.swift */; };
 		031D813C1FBCCC710094F598 /* TimesTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031D813A1FBCCC710094F598 /* TimesTVCell.xib */; };
-		031D813E1FBCCD000094F598 /* TableViewCellHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D813D1FBCCD000094F598 /* TableViewCellHelpers.swift */; };
+		031D813E1FBCCD000094F598 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D813D1FBCCD000094F598 /* UITableViewCell+Extensions.swift */; };
 		031D81441FBDFC400094F598 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D81431FBDFC400094F598 /* Config.swift */; };
 		036DD2B01FEB19F000160661 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DD2AF1FEB19F000160661 /* Ride.swift */; };
 		036DD2B21FEB1A1300160661 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DD2B11FEB1A1300160661 /* Location.swift */; };
@@ -44,6 +44,22 @@
 		039E59511FBCC11D00FE3598 /* SetSpotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039E594F1FBCC11D00FE3598 /* SetSpotVC.xib */; };
 		039E59541FBCC20600FE3598 /* TimeslotMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E59521FBCC20600FE3598 /* TimeslotMapVC.swift */; };
 		039E59551FBCC20600FE3598 /* TimeslotMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039E59531FBCC20600FE3598 /* TimeslotMapVC.xib */; };
+		03CE87431FEC167A0006F8A6 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87421FEC167A0006F8A6 /* Secrets.swift */; };
+		03CE87461FEC18E90006F8A6 /* SearchLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87441FEC18E90006F8A6 /* SearchLocationVC.swift */; };
+		03CE87471FEC18E90006F8A6 /* SearchLocationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CE87451FEC18E90006F8A6 /* SearchLocationVC.xib */; };
+		03CE874A1FEC1BCD0006F8A6 /* SetDestinationFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87481FEC1BCD0006F8A6 /* SetDestinationFlowVC.swift */; };
+		03CE874B1FEC1BCD0006F8A6 /* SetDestinationFlowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CE87491FEC1BCD0006F8A6 /* SetDestinationFlowVC.xib */; };
+		03CE874F1FEC24C10006F8A6 /* MapViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE874E1FEC24C10006F8A6 /* MapViewHelper.swift */; };
+		03CE87511FEC32320006F8A6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87501FEC32320006F8A6 /* LocationManager.swift */; };
+		03CE87531FEC3A510006F8A6 /* HasMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87521FEC3A510006F8A6 /* HasMapView.swift */; };
+		03CE87551FEC3BE50006F8A6 /* TimeslotSearchForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87541FEC3BE50006F8A6 /* TimeslotSearchForm.swift */; };
+		03CE87581FEC41E70006F8A6 /* SetPickupSpotFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87561FEC41E70006F8A6 /* SetPickupSpotFlowVC.swift */; };
+		03CE87591FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CE87571FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib */; };
+		03CE875C1FEC46420006F8A6 /* TimeslotsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE875A1FEC46420006F8A6 /* TimeslotsTVC.swift */; };
+		03CE875D1FEC46420006F8A6 /* TimeslotsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CE875B1FEC46420006F8A6 /* TimeslotsTVC.xib */; };
+		03F66E551FEC637E005BAC8B /* TimeslotTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F66E531FEC637E005BAC8B /* TimeslotTVCell.swift */; };
+		03F66E561FEC637E005BAC8B /* TimeslotTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F66E541FEC637E005BAC8B /* TimeslotTVCell.xib */; };
+		03F66E5C1FEC6648005BAC8B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F66E5B1FEC6648005BAC8B /* Util.swift */; };
 		03F9C8BE1FBFC56E00D84773 /* TimeslotAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C8BC1FBFC56E00D84773 /* TimeslotAnnotation.swift */; };
 		03F9C8BF1FBFC56E00D84773 /* TimeslotAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C8BD1FBFC56E00D84773 /* TimeslotAnnotationView.swift */; };
 		03F9C8C11FBFC57E00D84773 /* TimeslotCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C8C01FBFC57E00D84773 /* TimeslotCircle.swift */; };
@@ -76,7 +92,7 @@
 		031D81361FBCC8810094F598 /* TimesTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimesTableVC.xib; sourceTree = "<group>"; };
 		031D81391FBCCC710094F598 /* TimesTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTVCell.swift; sourceTree = "<group>"; };
 		031D813A1FBCCC710094F598 /* TimesTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimesTVCell.xib; sourceTree = "<group>"; };
-		031D813D1FBCCD000094F598 /* TableViewCellHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellHelpers.swift; sourceTree = "<group>"; };
+		031D813D1FBCCD000094F598 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		031D81431FBDFC400094F598 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		036DD2AF1FEB19F000160661 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		036DD2B11FEB1A1300160661 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -113,6 +129,22 @@
 		039E594F1FBCC11D00FE3598 /* SetSpotVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetSpotVC.xib; sourceTree = "<group>"; };
 		039E59521FBCC20600FE3598 /* TimeslotMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotMapVC.swift; sourceTree = "<group>"; };
 		039E59531FBCC20600FE3598 /* TimeslotMapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeslotMapVC.xib; sourceTree = "<group>"; };
+		03CE87421FEC167A0006F8A6 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		03CE87441FEC18E90006F8A6 /* SearchLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationVC.swift; sourceTree = "<group>"; };
+		03CE87451FEC18E90006F8A6 /* SearchLocationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchLocationVC.xib; sourceTree = "<group>"; };
+		03CE87481FEC1BCD0006F8A6 /* SetDestinationFlowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDestinationFlowVC.swift; sourceTree = "<group>"; };
+		03CE87491FEC1BCD0006F8A6 /* SetDestinationFlowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetDestinationFlowVC.xib; sourceTree = "<group>"; };
+		03CE874E1FEC24C10006F8A6 /* MapViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewHelper.swift; sourceTree = "<group>"; };
+		03CE87501FEC32320006F8A6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		03CE87521FEC3A510006F8A6 /* HasMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasMapView.swift; sourceTree = "<group>"; };
+		03CE87541FEC3BE50006F8A6 /* TimeslotSearchForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotSearchForm.swift; sourceTree = "<group>"; };
+		03CE87561FEC41E70006F8A6 /* SetPickupSpotFlowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPickupSpotFlowVC.swift; sourceTree = "<group>"; };
+		03CE87571FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPickupSpotFlowVC.xib; sourceTree = "<group>"; };
+		03CE875A1FEC46420006F8A6 /* TimeslotsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotsTVC.swift; sourceTree = "<group>"; };
+		03CE875B1FEC46420006F8A6 /* TimeslotsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeslotsTVC.xib; sourceTree = "<group>"; };
+		03F66E531FEC637E005BAC8B /* TimeslotTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotTVCell.swift; sourceTree = "<group>"; };
+		03F66E541FEC637E005BAC8B /* TimeslotTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeslotTVCell.xib; sourceTree = "<group>"; };
+		03F66E5B1FEC6648005BAC8B /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		03F9C8BC1FBFC56E00D84773 /* TimeslotAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeslotAnnotation.swift; sourceTree = "<group>"; };
 		03F9C8BD1FBFC56E00D84773 /* TimeslotAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeslotAnnotationView.swift; sourceTree = "<group>"; };
 		03F9C8C01FBFC57E00D84773 /* TimeslotCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeslotCircle.swift; sourceTree = "<group>"; };
@@ -161,6 +193,7 @@
 				036DD2B31FEB1A2800160661 /* CircleArea.swift */,
 				036DD2AF1FEB19F000160661 /* Ride.swift */,
 				036DD2B11FEB1A1300160661 /* Location.swift */,
+				03CE87541FEC3BE50006F8A6 /* TimeslotSearchForm.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +209,7 @@
 				036DD2C41FEB1B7D00160661 /* MapView+Extensions.swift */,
 				036DD2C61FEB1BA300160661 /* CLLocationCoordinate2D+Extensions.swift */,
 				036DD2C81FEB1BBE00160661 /* NSObject+Extensions.swift */,
+				031D813D1FBCCD000094F598 /* UITableViewCell+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,7 +228,10 @@
 		036DD2D51FEC0CE000160661 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				031D813D1FBCCD000094F598 /* TableViewCellHelpers.swift */,
+				03F66E5B1FEC6648005BAC8B /* Util.swift */,
+				03CE874E1FEC24C10006F8A6 /* MapViewHelper.swift */,
+				03CE87501FEC32320006F8A6 /* LocationManager.swift */,
+				03CE87521FEC3A510006F8A6 /* HasMapView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -224,27 +261,10 @@
 		039E59151FBCA77500FE3598 /* EgglerPool */ = {
 			isa = PBXGroup;
 			children = (
-				031D81431FBDFC400094F598 /* Config.swift */,
-				036DD2D21FEC06E200160661 /* Defaults.swift */,
-				036DD2D01FEBFE2400160661 /* Color.swift */,
-				036DD2CE1FEB247500160661 /* MockData.swift */,
-				039E594E1FBCC11D00FE3598 /* SetSpotVC.swift */,
-				039E594F1FBCC11D00FE3598 /* SetSpotVC.xib */,
-				036DD2CA1FEB1E2E00160661 /* SetSpotButtonsVC.swift */,
-				036DD2CB1FEB1E2E00160661 /* SetSpotButtonsVC.xib */,
-				039E59481FBCA89E00FE3598 /* TimeWindowVC.swift */,
-				039E59491FBCA89E00FE3598 /* TimeWindowVC.xib */,
-				039E59521FBCC20600FE3598 /* TimeslotMapVC.swift */,
-				039E59531FBCC20600FE3598 /* TimeslotMapVC.xib */,
-				031D81311FBCC8300094F598 /* SetTimeVC.swift */,
-				031D81321FBCC8300094F598 /* SetTimeVC.xib */,
-				031D81351FBCC8810094F598 /* TimesTableVC.swift */,
-				031D81361FBCC8810094F598 /* TimesTableVC.xib */,
-				031D81391FBCCC710094F598 /* TimesTVCell.swift */,
-				031D813A1FBCCC710094F598 /* TimesTVCell.xib */,
-				03F9C8BC1FBFC56E00D84773 /* TimeslotAnnotation.swift */,
-				03F9C8BD1FBFC56E00D84773 /* TimeslotAnnotationView.swift */,
-				03F9C8C01FBFC57E00D84773 /* TimeslotCircle.swift */,
+				03CE87411FEC164C0006F8A6 /* Reference Files */,
+				03CE87401FEC163B0006F8A6 /* Set Location */,
+				03CE873F1FEC16280006F8A6 /* Time */,
+				03CE873E1FEC16110006F8A6 /* Maps */,
 				036DD2AE1FEB19E200160661 /* Model */,
 				036DD2B91FEB1A6900160661 /* Extensions */,
 				036DD2D51FEC0CE000160661 /* Helpers */,
@@ -269,6 +289,66 @@
 				039E59381FBCA77500FE3598 /* Info.plist */,
 			);
 			path = EgglerPoolUITests;
+			sourceTree = "<group>";
+		};
+		03CE873E1FEC16110006F8A6 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				039E59521FBCC20600FE3598 /* TimeslotMapVC.swift */,
+				039E59531FBCC20600FE3598 /* TimeslotMapVC.xib */,
+				03F9C8BC1FBFC56E00D84773 /* TimeslotAnnotation.swift */,
+				03F9C8BD1FBFC56E00D84773 /* TimeslotAnnotationView.swift */,
+				03F9C8C01FBFC57E00D84773 /* TimeslotCircle.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		03CE873F1FEC16280006F8A6 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				039E59481FBCA89E00FE3598 /* TimeWindowVC.swift */,
+				039E59491FBCA89E00FE3598 /* TimeWindowVC.xib */,
+				031D81311FBCC8300094F598 /* SetTimeVC.swift */,
+				031D81321FBCC8300094F598 /* SetTimeVC.xib */,
+				031D81351FBCC8810094F598 /* TimesTableVC.swift */,
+				031D81361FBCC8810094F598 /* TimesTableVC.xib */,
+				031D81391FBCCC710094F598 /* TimesTVCell.swift */,
+				031D813A1FBCCC710094F598 /* TimesTVCell.xib */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		03CE87401FEC163B0006F8A6 /* Set Location */ = {
+			isa = PBXGroup;
+			children = (
+				039E594E1FBCC11D00FE3598 /* SetSpotVC.swift */,
+				039E594F1FBCC11D00FE3598 /* SetSpotVC.xib */,
+				036DD2CA1FEB1E2E00160661 /* SetSpotButtonsVC.swift */,
+				036DD2CB1FEB1E2E00160661 /* SetSpotButtonsVC.xib */,
+				03CE87441FEC18E90006F8A6 /* SearchLocationVC.swift */,
+				03CE87451FEC18E90006F8A6 /* SearchLocationVC.xib */,
+				03CE87481FEC1BCD0006F8A6 /* SetDestinationFlowVC.swift */,
+				03CE87491FEC1BCD0006F8A6 /* SetDestinationFlowVC.xib */,
+				03CE87561FEC41E70006F8A6 /* SetPickupSpotFlowVC.swift */,
+				03CE87571FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib */,
+				03CE875A1FEC46420006F8A6 /* TimeslotsTVC.swift */,
+				03CE875B1FEC46420006F8A6 /* TimeslotsTVC.xib */,
+				03F66E531FEC637E005BAC8B /* TimeslotTVCell.swift */,
+				03F66E541FEC637E005BAC8B /* TimeslotTVCell.xib */,
+			);
+			path = "Set Location";
+			sourceTree = "<group>";
+		};
+		03CE87411FEC164C0006F8A6 /* Reference Files */ = {
+			isa = PBXGroup;
+			children = (
+				031D81431FBDFC400094F598 /* Config.swift */,
+				036DD2D21FEC06E200160661 /* Defaults.swift */,
+				036DD2D01FEBFE2400160661 /* Color.swift */,
+				036DD2CE1FEB247500160661 /* MockData.swift */,
+				03CE87421FEC167A0006F8A6 /* Secrets.swift */,
+			);
+			path = "Reference Files";
 			sourceTree = "<group>";
 		};
 		2C628F5C15321BE81F77A53E /* Frameworks */ = {
@@ -405,10 +485,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				039E59211FBCA77500FE3598 /* LaunchScreen.storyboard in Resources */,
+				03CE87471FEC18E90006F8A6 /* SearchLocationVC.xib in Resources */,
 				039E59551FBCC20600FE3598 /* TimeslotMapVC.xib in Resources */,
+				03CE874B1FEC1BCD0006F8A6 /* SetDestinationFlowVC.xib in Resources */,
 				031D81341FBCC8300094F598 /* SetTimeVC.xib in Resources */,
+				03CE875D1FEC46420006F8A6 /* TimeslotsTVC.xib in Resources */,
 				039E594B1FBCA89E00FE3598 /* TimeWindowVC.xib in Resources */,
 				036DD2CD1FEB1E2E00160661 /* SetSpotButtonsVC.xib in Resources */,
+				03F66E561FEC637E005BAC8B /* TimeslotTVCell.xib in Resources */,
+				03CE87591FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib in Resources */,
 				031D813C1FBCCC710094F598 /* TimesTVCell.xib in Resources */,
 				031D81381FBCC8810094F598 /* TimesTableVC.xib in Resources */,
 				039E591E1FBCA77500FE3598 /* Assets.xcassets in Resources */,
@@ -555,12 +640,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CE87531FEC3A510006F8A6 /* HasMapView.swift in Sources */,
 				036DD2C91FEB1BBE00160661 /* NSObject+Extensions.swift in Sources */,
-				031D813E1FBCCD000094F598 /* TableViewCellHelpers.swift in Sources */,
+				031D813E1FBCCD000094F598 /* UITableViewCell+Extensions.swift in Sources */,
 				031D813B1FBCCC710094F598 /* TimesTVCell.swift in Sources */,
 				036DD2BD1FEB1AB700160661 /* Date+Extensions.swift in Sources */,
 				036DD2B21FEB1A1300160661 /* Location.swift in Sources */,
+				03CE875C1FEC46420006F8A6 /* TimeslotsTVC.swift in Sources */,
 				036DD2CF1FEB247500160661 /* MockData.swift in Sources */,
+				03F66E5C1FEC6648005BAC8B /* Util.swift in Sources */,
 				03F9C8C31FBFC64700D84773 /* Timeslot.swift in Sources */,
 				03F9C8BF1FBFC56E00D84773 /* TimeslotAnnotationView.swift in Sources */,
 				036DD2BF1FEB1AE100160661 /* UIViewController+Extensions.swift in Sources */,
@@ -569,19 +657,27 @@
 				039E59171FBCA77500FE3598 /* AppDelegate.swift in Sources */,
 				039E59501FBCC11D00FE3598 /* SetSpotVC.swift in Sources */,
 				036DD2C51FEB1B7D00160661 /* MapView+Extensions.swift in Sources */,
+				03CE87581FEC41E70006F8A6 /* SetPickupSpotFlowVC.swift in Sources */,
+				03CE87431FEC167A0006F8A6 /* Secrets.swift in Sources */,
 				036DD2BB1FEB1A8600160661 /* Int+Extensions.swift in Sources */,
 				036DD2B01FEB19F000160661 /* Ride.swift in Sources */,
+				03CE87511FEC32320006F8A6 /* LocationManager.swift in Sources */,
 				036DD2C31FEB1B3600160661 /* CGRect+Extensions.swift in Sources */,
 				036DD2D11FEBFE2400160661 /* Color.swift in Sources */,
 				036DD2C11FEB1B0B00160661 /* UIView+Extensions.swift in Sources */,
 				031D81371FBCC8810094F598 /* TimesTableVC.swift in Sources */,
 				031D81441FBDFC400094F598 /* Config.swift in Sources */,
+				03F66E551FEC637E005BAC8B /* TimeslotTVCell.swift in Sources */,
 				03F9C8C11FBFC57E00D84773 /* TimeslotCircle.swift in Sources */,
 				036DD2B41FEB1A2800160661 /* CircleArea.swift in Sources */,
 				036DD2B81FEB1A5600160661 /* TimeWindow.swift in Sources */,
+				03CE874F1FEC24C10006F8A6 /* MapViewHelper.swift in Sources */,
+				03CE87461FEC18E90006F8A6 /* SearchLocationVC.swift in Sources */,
+				03CE874A1FEC1BCD0006F8A6 /* SetDestinationFlowVC.swift in Sources */,
 				036DD2C71FEB1BA300160661 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
 				036DD2B61FEB1A3F00160661 /* User.swift in Sources */,
 				039E59541FBCC20600FE3598 /* TimeslotMapVC.swift in Sources */,
+				03CE87551FEC3BE50006F8A6 /* TimeslotSearchForm.swift in Sources */,
 				036DD2D31FEC06E200160661 /* Defaults.swift in Sources */,
 				036DD2CC1FEB1E2E00160661 /* SetSpotButtonsVC.swift in Sources */,
 				03F9C8BE1FBFC56E00D84773 /* TimeslotAnnotation.swift in Sources */,
@@ -745,7 +841,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F9E934J8Z2;
-				INFOPLIST_FILE = EgglerPool/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EgglerPool/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaseybaughan.EgglerPool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -761,7 +857,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F9E934J8Z2;
-				INFOPLIST_FILE = EgglerPool/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EgglerPool/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaseybaughan.EgglerPool;
 				PRODUCT_NAME = "$(TARGET_NAME)";

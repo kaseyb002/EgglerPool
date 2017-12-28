@@ -6,4 +6,9 @@ extension CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude + (latBy ?? 0.0),
                                       longitude: longitude + (longBy ?? 0.0))
     }
+    
+    func printLatLng() {
+        print("Lat: \(latitude)")
+        print("Lng: \(longitude)")
+    }
 }

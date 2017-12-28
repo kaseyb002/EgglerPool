@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (4.5.1)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - Font-Awesome-Swift (1.7.1)
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.5.0):
+    - GoogleMaps/Base (= 2.5.0)
+  - Kingfisher (4.2.0)
+  - Pastel (0.3.0)
+  - SVProgressHUD (2.2.2)
+  - SwiftKeychainWrapper (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ChameleonFramework
+  - Font-Awesome-Swift
+  - GoogleMaps
+  - GooglePlaces
+  - Kingfisher
+  - Pastel
+  - SVProgressHUD
+  - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Font-Awesome-Swift: 5d950362121533489b2f6ac42e0e29db37fd970e
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
+  GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
+  Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
+
+PODFILE CHECKSUM: c76fa563fff4fa1f5c58cdf9b4bfdb55b8fd5c22
+
+COCOAPODS: 1.3.1

@@ -2,10 +2,9 @@ import MapKit
 
 extension MKMapView {
     
-    func moveTo(location: CLLocationCoordinate2D, spanDegrees: Double = 0.3) {
-        let span = MKCoordinateSpan(latitudeDelta: spanDegrees,
-                                    longitudeDelta: spanDegrees)
-        let region = MKCoordinateRegion(center: location, span: span)
+    func moveTo(location: CLLocationCoordinate2D, metersZoomed: Double = 10) {
+        let region = MKCoordinateRegionMakeWithDistance(location, metersZoomed, metersZoomed)
+        region.center.printLatLng()
         setRegion(region, animated: true)
     }
 }
