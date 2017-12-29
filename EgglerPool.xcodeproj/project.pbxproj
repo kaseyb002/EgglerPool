@@ -44,6 +44,14 @@
 		039E59511FBCC11D00FE3598 /* SetSpotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039E594F1FBCC11D00FE3598 /* SetSpotVC.xib */; };
 		039E59541FBCC20600FE3598 /* TimeslotMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E59521FBCC20600FE3598 /* TimeslotMapVC.swift */; };
 		039E59551FBCC20600FE3598 /* TimeslotMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039E59531FBCC20600FE3598 /* TimeslotMapVC.xib */; };
+		03CAB6681FF56FAA007E7035 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAB6661FF56FAA007E7035 /* StartVC.swift */; };
+		03CAB6691FF56FAA007E7035 /* StartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CAB6671FF56FAA007E7035 /* StartVC.xib */; };
+		03CAB6731FF581A8007E7035 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CAB6711FF581A8007E7035 /* car.png */; };
+		03CAB6741FF581A8007E7035 /* egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CAB6721FF581A8007E7035 /* egg.png */; };
+		03CAB6761FF584B7007E7035 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAB6751FF584B7007E7035 /* CGPoint+Extensions.swift */; };
+		03CAB67D1FF58C84007E7035 /* ShowAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAB67B1FF58C84007E7035 /* ShowAddressVC.swift */; };
+		03CAB67E1FF58C84007E7035 /* ShowAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CAB67C1FF58C84007E7035 /* ShowAddressVC.xib */; };
+		03CAB6801FF59280007E7035 /* GMSPlace+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAB67F1FF59280007E7035 /* GMSPlace+Extensions.swift */; };
 		03CE87431FEC167A0006F8A6 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87421FEC167A0006F8A6 /* Secrets.swift */; };
 		03CE87461FEC18E90006F8A6 /* SearchLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE87441FEC18E90006F8A6 /* SearchLocationVC.swift */; };
 		03CE87471FEC18E90006F8A6 /* SearchLocationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CE87451FEC18E90006F8A6 /* SearchLocationVC.xib */; };
@@ -129,6 +137,14 @@
 		039E594F1FBCC11D00FE3598 /* SetSpotVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetSpotVC.xib; sourceTree = "<group>"; };
 		039E59521FBCC20600FE3598 /* TimeslotMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotMapVC.swift; sourceTree = "<group>"; };
 		039E59531FBCC20600FE3598 /* TimeslotMapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeslotMapVC.xib; sourceTree = "<group>"; };
+		03CAB6661FF56FAA007E7035 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		03CAB6671FF56FAA007E7035 /* StartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartVC.xib; sourceTree = "<group>"; };
+		03CAB6711FF581A8007E7035 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		03CAB6721FF581A8007E7035 /* egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egg.png; sourceTree = "<group>"; };
+		03CAB6751FF584B7007E7035 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		03CAB67B1FF58C84007E7035 /* ShowAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAddressVC.swift; sourceTree = "<group>"; };
+		03CAB67C1FF58C84007E7035 /* ShowAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowAddressVC.xib; sourceTree = "<group>"; };
+		03CAB67F1FF59280007E7035 /* GMSPlace+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GMSPlace+Extensions.swift"; sourceTree = "<group>"; };
 		03CE87421FEC167A0006F8A6 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		03CE87441FEC18E90006F8A6 /* SearchLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationVC.swift; sourceTree = "<group>"; };
 		03CE87451FEC18E90006F8A6 /* SearchLocationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchLocationVC.xib; sourceTree = "<group>"; };
@@ -205,7 +221,9 @@
 				036DD2BC1FEB1AB700160661 /* Date+Extensions.swift */,
 				036DD2BE1FEB1AE100160661 /* UIViewController+Extensions.swift */,
 				036DD2C21FEB1B3600160661 /* CGRect+Extensions.swift */,
+				03CAB6751FF584B7007E7035 /* CGPoint+Extensions.swift */,
 				036DD2C01FEB1B0B00160661 /* UIView+Extensions.swift */,
+				03CAB67F1FF59280007E7035 /* GMSPlace+Extensions.swift */,
 				036DD2C41FEB1B7D00160661 /* MapView+Extensions.swift */,
 				036DD2C61FEB1BA300160661 /* CLLocationCoordinate2D+Extensions.swift */,
 				036DD2C81FEB1BBE00160661 /* NSObject+Extensions.swift */,
@@ -217,6 +235,8 @@
 		036DD2D41FEC0CBF00160661 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03CAB6711FF581A8007E7035 /* car.png */,
+				03CAB6721FF581A8007E7035 /* egg.png */,
 				039E59161FBCA77500FE3598 /* AppDelegate.swift */,
 				039E591D1FBCA77500FE3598 /* Assets.xcassets */,
 				039E591F1FBCA77500FE3598 /* LaunchScreen.storyboard */,
@@ -261,7 +281,7 @@
 		039E59151FBCA77500FE3598 /* EgglerPool */ = {
 			isa = PBXGroup;
 			children = (
-				03CE87411FEC164C0006F8A6 /* Reference Files */,
+				03CAB66A1FF57AF7007E7035 /* Start */,
 				03CE87401FEC163B0006F8A6 /* Set Location */,
 				03CE873F1FEC16280006F8A6 /* Time */,
 				03CE873E1FEC16110006F8A6 /* Maps */,
@@ -269,6 +289,7 @@
 				036DD2B91FEB1A6900160661 /* Extensions */,
 				036DD2D51FEC0CE000160661 /* Helpers */,
 				036DD2D41FEC0CBF00160661 /* Supporting Files */,
+				03CE87411FEC164C0006F8A6 /* Reference Files */,
 			);
 			path = EgglerPool;
 			sourceTree = "<group>";
@@ -291,6 +312,15 @@
 			path = EgglerPoolUITests;
 			sourceTree = "<group>";
 		};
+		03CAB66A1FF57AF7007E7035 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				03CAB6661FF56FAA007E7035 /* StartVC.swift */,
+				03CAB6671FF56FAA007E7035 /* StartVC.xib */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
 		03CE873E1FEC16110006F8A6 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +329,8 @@
 				03F9C8BC1FBFC56E00D84773 /* TimeslotAnnotation.swift */,
 				03F9C8BD1FBFC56E00D84773 /* TimeslotAnnotationView.swift */,
 				03F9C8C01FBFC57E00D84773 /* TimeslotCircle.swift */,
+				03CAB67B1FF58C84007E7035 /* ShowAddressVC.swift */,
+				03CAB67C1FF58C84007E7035 /* ShowAddressVC.xib */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -485,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				039E59211FBCA77500FE3598 /* LaunchScreen.storyboard in Resources */,
+				03CAB6691FF56FAA007E7035 /* StartVC.xib in Resources */,
 				03CE87471FEC18E90006F8A6 /* SearchLocationVC.xib in Resources */,
 				039E59551FBCC20600FE3598 /* TimeslotMapVC.xib in Resources */,
 				03CE874B1FEC1BCD0006F8A6 /* SetDestinationFlowVC.xib in Resources */,
@@ -494,7 +527,10 @@
 				036DD2CD1FEB1E2E00160661 /* SetSpotButtonsVC.xib in Resources */,
 				03F66E561FEC637E005BAC8B /* TimeslotTVCell.xib in Resources */,
 				03CE87591FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib in Resources */,
+				03CAB6731FF581A8007E7035 /* car.png in Resources */,
+				03CAB6741FF581A8007E7035 /* egg.png in Resources */,
 				031D813C1FBCCC710094F598 /* TimesTVCell.xib in Resources */,
+				03CAB67E1FF58C84007E7035 /* ShowAddressVC.xib in Resources */,
 				031D81381FBCC8810094F598 /* TimesTableVC.xib in Resources */,
 				039E591E1FBCA77500FE3598 /* Assets.xcassets in Resources */,
 				039E59511FBCC11D00FE3598 /* SetSpotVC.xib in Resources */,
@@ -642,6 +678,7 @@
 			files = (
 				03CE87531FEC3A510006F8A6 /* HasMapView.swift in Sources */,
 				036DD2C91FEB1BBE00160661 /* NSObject+Extensions.swift in Sources */,
+				03CAB67D1FF58C84007E7035 /* ShowAddressVC.swift in Sources */,
 				031D813E1FBCCD000094F598 /* UITableViewCell+Extensions.swift in Sources */,
 				031D813B1FBCCC710094F598 /* TimesTVCell.swift in Sources */,
 				036DD2BD1FEB1AB700160661 /* Date+Extensions.swift in Sources */,
@@ -651,6 +688,7 @@
 				03F66E5C1FEC6648005BAC8B /* Util.swift in Sources */,
 				03F9C8C31FBFC64700D84773 /* Timeslot.swift in Sources */,
 				03F9C8BF1FBFC56E00D84773 /* TimeslotAnnotationView.swift in Sources */,
+				03CAB6681FF56FAA007E7035 /* StartVC.swift in Sources */,
 				036DD2BF1FEB1AE100160661 /* UIViewController+Extensions.swift in Sources */,
 				031D81331FBCC8300094F598 /* SetTimeVC.swift in Sources */,
 				039E594A1FBCA89E00FE3598 /* TimeWindowVC.swift in Sources */,
@@ -663,6 +701,7 @@
 				036DD2B01FEB19F000160661 /* Ride.swift in Sources */,
 				03CE87511FEC32320006F8A6 /* LocationManager.swift in Sources */,
 				036DD2C31FEB1B3600160661 /* CGRect+Extensions.swift in Sources */,
+				03CAB6801FF59280007E7035 /* GMSPlace+Extensions.swift in Sources */,
 				036DD2D11FEBFE2400160661 /* Color.swift in Sources */,
 				036DD2C11FEB1B0B00160661 /* UIView+Extensions.swift in Sources */,
 				031D81371FBCC8810094F598 /* TimesTableVC.swift in Sources */,
@@ -677,6 +716,7 @@
 				036DD2C71FEB1BA300160661 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
 				036DD2B61FEB1A3F00160661 /* User.swift in Sources */,
 				039E59541FBCC20600FE3598 /* TimeslotMapVC.swift in Sources */,
+				03CAB6761FF584B7007E7035 /* CGPoint+Extensions.swift in Sources */,
 				03CE87551FEC3BE50006F8A6 /* TimeslotSearchForm.swift in Sources */,
 				036DD2D31FEC06E200160661 /* Defaults.swift in Sources */,
 				036DD2CC1FEB1E2E00160661 /* SetSpotButtonsVC.swift in Sources */,

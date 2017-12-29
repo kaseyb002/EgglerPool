@@ -19,6 +19,7 @@
             <connections>
                 <outlet property="nextButton" destination="JXh-QI-A83" id="Ujp-pb-Via"/>
                 <outlet property="searchLocationView" destination="vsI-WO-2eq" id="AxL-fB-9Wr"/>
+                <outlet property="showAddressView" destination="uxR-m4-jov" id="5fk-FR-0GZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,6 +31,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsI-WO-2eq">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxR-m4-jov">
+                    <rect key="frame" x="0.0" y="232" width="375" height="223"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="223" id="hjN-oo-b6X"/>
+                    </constraints>
                 </view>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXh-QI-A83">
                     <rect key="frame" x="8" y="599" width="359" height="60"/>
@@ -54,7 +62,10 @@
                 <constraint firstItem="JXh-QI-A83" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Los-CD-1H6"/>
                 <constraint firstItem="vsI-WO-2eq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vem-bB-IWt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JXh-QI-A83" secondAttribute="bottom" constant="8" id="evg-73-geu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uxR-m4-jov" secondAttribute="trailing" id="gVX-ce-o8n"/>
+                <constraint firstItem="uxR-m4-jov" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hbg-Ha-k0n"/>
                 <constraint firstItem="vsI-WO-2eq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lPP-Dn-R6z"/>
+                <constraint firstItem="uxR-m4-jov" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="rvL-t2-53W"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.5" y="54.5"/>

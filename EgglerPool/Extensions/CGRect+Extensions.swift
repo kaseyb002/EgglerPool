@@ -24,3 +24,5 @@ extension CGRect {
                       height: size.height + (height ?? 0))
     }
 }
+
+var screenBounds: CGRect { return UIScreen.main.bounds }

@@ -21,8 +21,7 @@ extension AppDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         
-        let nav = UINavigationController(rootViewController: SetDestinationFlowVC())
-        window?.rootViewController = nav
+        window?.rootViewController = StartVC()
         window?.makeKeyAndVisible()
     }
     
