@@ -21,6 +21,9 @@ class SearchLocationVC: UIViewController {
     //MARK: - Google Places Properties
     lazy var resultsViewController: GMSAutocompleteResultsViewController = {
         let resultsVC = GMSAutocompleteResultsViewController()
+        let filter = GMSAutocompleteFilter()
+        filter.type = .address
+        resultsVC.autocompleteFilter = filter
         resultsVC.delegate = self
         //bound results to united states
         resultsVC.autocompleteBounds = GMSCoordinateBounds(coordinate: CLLocationCoordinate2DMake(-172.265625, 18.1458517717),

@@ -1,7 +1,7 @@
 import MapKit
 
 struct Location {
-    let location: CLLocationCoordinate2D
+    let coordinate: CLLocationCoordinate2D
     let streetAddress: String
     let city: String
     let state: String

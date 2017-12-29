@@ -12,15 +12,16 @@ class SetDestinationFlowVC: UIViewController {
     }
     
     //MARK: - Properties
-    private var selectedPlace: GMSPlace? {
+    private var selectedLocation: Location? {
         didSet {
-            nextButton.isHidden = selectedPlace == nil
+            updateAddress()
         }
     }
     
     //MARK: - Outlets
     @IBOutlet weak var searchLocationView: UIView!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var showAddressView: UIView!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -36,25 +37,46 @@ class SetDestinationFlowVC: UIViewController {
         nextButton.backgroundColor = Color.mainPurple
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        guard let place = selectedPlace else { return }
-        goToConfirmDestination(place: place)
+        guard let location = selectedLocation else { return }
+        goToConfirmDestination(location: location)
     }
     
     //MARK: - Child VCs
     private lazy var searchLocationVC: SearchLocationVC = {
         return SearchLocationVC(title: "Where would you like to go?") { place in
-            self.selectedPlace = place
+            self.selectedLocation = place.location
         }
     }()
+}
+
+//MARK: - UI Updates
+extension SetDestinationFlowVC {
+    
+    private func updateAddress() {
+        guard let location = selectedLocation else {
+            showAddressView.isHidden = true
+            nextButton.isHidden = true
+            return
+        }
+        showAddressView.isHidden = false
+        nextButton.isHidden = false
+        let vc = ShowAddressVC(location: location)
+        load(vc, into: showAddressView)
+    }
 }
 
 //MARK: - Go Tos
 extension SetDestinationFlowVC {
     
-    private func goToConfirmDestination(place: GMSPlace) {
+    private func goToConfirmDestination(location: Location) {
         var searchForm = TimeslotSearchForm()
-        searchForm.destination = place
+        searchForm.destination = location
         let vc = SetPickupSpotFlowVC(searchForm: searchForm)
         navigationController?.pushViewController(vc, animated: true)
     }

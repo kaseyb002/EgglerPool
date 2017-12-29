@@ -7,6 +7,7 @@ class SetSpotVC: UIViewController, LocationManager {
     //MARK: - Required inits for Xibs
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}
     override var nibName: String? { return String(describing: type(of: self)) }
+    
     init(spotType: SpotType,
          initialLocation: CLLocationCoordinate2D?,
          setSpot: @escaping (Date, Date, CLLocationCoordinate2D) -> ()) {
