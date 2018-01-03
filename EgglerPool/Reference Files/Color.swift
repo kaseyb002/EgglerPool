@@ -3,6 +3,7 @@ import UIKit
 struct Color {
     
     static let mainPurple: UIColor = UIColor.flatPlum()
+    static let airbnbGray: UIColor = UIColor(hexString: "#484848")
     
     /**
      Creates a color based on the price

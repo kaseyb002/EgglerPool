@@ -5,3 +5,5 @@ func call(after: Double, callback: @escaping () -> ()) {
         callback()
     }
 }
+
+typealias Callback = () -> ()

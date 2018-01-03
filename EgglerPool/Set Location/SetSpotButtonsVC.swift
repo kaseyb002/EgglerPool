@@ -10,9 +10,9 @@ class SetSpotButtonsVC: UIViewController {
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}
     override var nibName: String? { return String(describing: type(of: self)) }
     init(buttonTitle: String,
-         setSpotButtonPressed: @escaping () -> (),
-         currentLocationButtonPressed: @escaping () -> (),
-         searchButtonPressed: @escaping () -> (),
+         setSpotButtonPressed: @escaping Callback,
+         currentLocationButtonPressed: @escaping Callback,
+         searchButtonPressed: @escaping Callback,
          setSpotButtonBgColor: UIColor = Color.mainPurple) {
         self.buttonTitle = buttonTitle
         self.setSpotButtonPressed = setSpotButtonPressed
@@ -24,15 +24,15 @@ class SetSpotButtonsVC: UIViewController {
     
     //MARK: - Properties
     private let buttonTitle: String
-    private let setSpotButtonPressed: () -> ()
-    private let currentLocationButtonPressed: () -> ()
-    private let searchButtonPressed: () -> ()
+    private let setSpotButtonPressed: Callback
+    private let currentLocationButtonPressed: Callback
+    private let searchButtonPressed: Callback
     private let setSpotButtonBgColor: UIColor
     
     //MARK: - Outlets
-    @IBOutlet weak var setSpotButton: UIButton!
-    @IBOutlet weak var currentLocationButton: UIButton!
-    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak private var setSpotButton: UIButton!
+    @IBOutlet weak private var currentLocationButton: UIButton!
+    @IBOutlet weak private var searchButton: UIButton!
 
     //MARK: - Lifecycle
     override func viewDidLoad() {

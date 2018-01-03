@@ -9,11 +9,3 @@ struct Timeslot {
     let price: Double
     let notes: String?
 }
-
-
-
-
-
-
-
-

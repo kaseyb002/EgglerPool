@@ -1,5 +1,6 @@
 import UIKit
 import MapKit
+import GooglePlaces
 
 class SetPickupSpotFlowVC: UIViewController {
     
@@ -15,7 +16,7 @@ class SetPickupSpotFlowVC: UIViewController {
     private var searchForm: TimeslotSearchForm
     
     //MARK: - Outlets
-    @IBOutlet weak var setPickupSpotView: UIView!
+    @IBOutlet weak private var setPickupSpotView: UIView!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -37,11 +38,16 @@ class SetPickupSpotFlowVC: UIViewController {
 //MARK: - Go Tos
 extension SetPickupSpotFlowVC {
     
-    private func goToTimeslots(earliest: Date, latest: Date, location: CLLocationCoordinate2D) {
+    private func goToTimeslots(earliest: Date,
+                               latest: Date,
+                               location: CLLocationCoordinate2D) {
         searchForm.earliest = earliest
         searchForm.latest = latest
         searchForm.pickupSpot = location
-        let vc = TimeslotsTVC(searchForm: searchForm)
+        let vc = ViewTimeslotsVC(earliest: earliest,
+                                 latest: latest,
+                                 pickupSpot: location,
+                                 destination: searchForm.destination!)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

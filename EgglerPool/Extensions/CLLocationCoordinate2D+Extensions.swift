@@ -11,4 +11,12 @@ extension CLLocationCoordinate2D {
         print("Lat: \(latitude)")
         print("Lng: \(longitude)")
     }
+    
+    func latLngDisplay(decimalPlaces: Int = 3) -> String {
+        return "\(latitude.decimalPlaces(decimalPlaces)), \(longitude.decimalPlaces(decimalPlaces))"
+    }
+    
+    var cllocation: CLLocation {
+        return CLLocation(latitude: latitude, longitude: longitude)
+    }
 }

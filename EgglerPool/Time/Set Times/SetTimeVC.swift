@@ -26,8 +26,8 @@ class SetTimeVC: UIViewController {
     private let callback: (Date) -> ()
     
     //MARK: - Outlets
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var timesTableView: UIView!
+    @IBOutlet weak private var titleLabel: UILabel!
+    @IBOutlet weak private var timesTableView: UIView!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {

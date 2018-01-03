@@ -10,21 +10,23 @@ class TimeslotMapVC: UIViewController, HasMapView {
     //MARK: - Required inits for Xibs
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}
     override var nibName: String? { return "TimeslotMapVC" }
-    init(hidePin: Bool = false) {
+    init(hidePin: Bool = false, mapIsInteractive: Bool = true) {
         self.hidePin = hidePin
+        self.mapIsInteractive = mapIsInteractive
         super.init(nibName: nil, bundle:nil)
     }
     
     //MARK: - Properties
     private let hidePin: Bool
+    private let mapIsInteractive: Bool
     private var circleOverlay: TimeslotCircle?
     private var circleRenderer: MKCircleRenderer?
     private var timeslotCircles = [MKCircle]()
     private var timeslotPoints = [TimeslotAnnotation]()
 
     //MARK: - Outlets
-    @IBOutlet weak var pinLabel: UILabel!
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak private var pinLabel: UILabel!
+    @IBOutlet weak internal var mapView: MKMapView!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -32,11 +34,15 @@ class TimeslotMapVC: UIViewController, HasMapView {
         pinLabel.setFAIcon(icon: FAType.FAMapMarker, iconSize: 35.0)
         pinLabel.setFAColor(color: Color.mainPurple)
         pinLabel.isHidden = hidePin
+        mapView.isUserInteractionEnabled = mapIsInteractive
     }
+}
+
+//MARK: - Public Actions
+extension TimeslotMapVC {
     
-    //MARK: - Public Actions
-    func moveTo(location: CLLocationCoordinate2D, zoomLevel: MapZoomLevel = .cityLevel) {
-        mapView.moveTo(location: location, metersZoomed: zoomLevel.rawValue)
+    func moveTo(location: CLLocationCoordinate2D, zoomLevel: MapZoomLevel? = .cityLevel) {
+        mapView.moveTo(location: location, metersZoomed: zoomLevel?.rawValue)
     }
     
     func showTimeslotsOnMap(_ timeslots: [Timeslot]) {
@@ -53,6 +59,10 @@ class TimeslotMapVC: UIViewController, HasMapView {
         mapView.addAnnotations(timeslotPoints)
         drawTimeslotRadiuses(timeslots)
     }
+}
+
+//MARK: - Update Map
+extension TimeslotMapVC {
     
     private func drawTimeslotRadiuses(_ timeslots: [Timeslot]) {
         //add in new circles

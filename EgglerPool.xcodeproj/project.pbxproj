@@ -15,6 +15,19 @@
 		031D813C1FBCCC710094F598 /* TimesTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031D813A1FBCCC710094F598 /* TimesTVCell.xib */; };
 		031D813E1FBCCD000094F598 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D813D1FBCCD000094F598 /* UITableViewCell+Extensions.swift */; };
 		031D81441FBDFC400094F598 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D81431FBDFC400094F598 /* Config.swift */; };
+		032882841FFC222A0042DAA1 /* ViewTimeslotsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032882821FFC22290042DAA1 /* ViewTimeslotsVC.swift */; };
+		032882851FFC222A0042DAA1 /* ViewTimeslotsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032882831FFC22290042DAA1 /* ViewTimeslotsVC.xib */; };
+		032882881FFC30C20042DAA1 /* TimeslotsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032882861FFC30C20042DAA1 /* TimeslotsTVCell.swift */; };
+		032882891FFC30C20042DAA1 /* TimeslotsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032882871FFC30C20042DAA1 /* TimeslotsTVCell.xib */; };
+		0328828C1FFD24870042DAA1 /* TimeslotCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0328828A1FFD24870042DAA1 /* TimeslotCVCell.swift */; };
+		0328828D1FFD24870042DAA1 /* TimeslotCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0328828B1FFD24870042DAA1 /* TimeslotCVCell.xib */; };
+		0328828F1FFD2A400042DAA1 /* t.png in Resources */ = {isa = PBXBuildFile; fileRef = 0328828E1FFD2A400042DAA1 /* t.png */; };
+		032882911FFD2A890042DAA1 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032882901FFD2A890042DAA1 /* UIImageView+Extensions.swift */; };
+		032882931FFD2F230042DAA1 /* TimeslotsInWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032882921FFD2F230042DAA1 /* TimeslotsInWindow.swift */; };
+		032882951FFD716E0042DAA1 /* TimeRangeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032882941FFD716E0042DAA1 /* TimeRangeHeaderView.swift */; };
+		032882971FFD72D20042DAA1 /* TimeRangeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032882961FFD72D20042DAA1 /* TimeRangeHeaderView.xib */; };
+		032882D31FFD79210042DAA1 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032882D21FFD79210042DAA1 /* Double+Extensions.swift */; };
+		034DD8BE1FFBE0EA00BE0E71 /* Location+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034DD8BD1FFBE0EA00BE0E71 /* Location+Extensions.swift */; };
 		036DD2B01FEB19F000160661 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DD2AF1FEB19F000160661 /* Ride.swift */; };
 		036DD2B21FEB1A1300160661 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DD2B11FEB1A1300160661 /* Location.swift */; };
 		036DD2B41FEB1A2800160661 /* CircleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DD2B31FEB1A2800160661 /* CircleArea.swift */; };
@@ -33,6 +46,14 @@
 		036DD2CF1FEB247500160661 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DD2CE1FEB247500160661 /* MockData.swift */; };
 		036DD2D11FEBFE2400160661 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DD2D01FEBFE2400160661 /* Color.swift */; };
 		036DD2D31FEC06E200160661 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DD2D21FEC06E200160661 /* Defaults.swift */; };
+		037AA3EE1FFBF04700932012 /* DayCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037AA3EC1FFBF04700932012 /* DayCVCell.swift */; };
+		037AA3EF1FFBF04700932012 /* DayCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037AA3ED1FFBF04700932012 /* DayCVCell.xib */; };
+		037AA3F11FFBFDE000932012 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037AA3F01FFBFDE000932012 /* UICollectionViewCell+Extensions.swift */; };
+		037AA3F41FFBFFDA00932012 /* SetDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037AA3F21FFBFFDA00932012 /* SetDayVC.swift */; };
+		037AA3F51FFBFFDA00932012 /* SetDayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037AA3F31FFBFFDA00932012 /* SetDayVC.xib */; };
+		037AA3F81FFC006100932012 /* DaysCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037AA3F61FFC006100932012 /* DaysCollectionVC.swift */; };
+		037AA3F91FFC006100932012 /* DaysCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037AA3F71FFC006100932012 /* DaysCollectionVC.xib */; };
+		037AA3FD1FFC0D1B00932012 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037AA3FC1FFC0D1B00932012 /* Settings.swift */; };
 		039E59171FBCA77500FE3598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039E59161FBCA77500FE3598 /* AppDelegate.swift */; };
 		039E591E1FBCA77500FE3598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039E591D1FBCA77500FE3598 /* Assets.xcassets */; };
 		039E59211FBCA77500FE3598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039E591F1FBCA77500FE3598 /* LaunchScreen.storyboard */; };
@@ -65,8 +86,8 @@
 		03CE87591FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CE87571FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib */; };
 		03CE875C1FEC46420006F8A6 /* TimeslotsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE875A1FEC46420006F8A6 /* TimeslotsTVC.swift */; };
 		03CE875D1FEC46420006F8A6 /* TimeslotsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CE875B1FEC46420006F8A6 /* TimeslotsTVC.xib */; };
-		03F66E551FEC637E005BAC8B /* TimeslotTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F66E531FEC637E005BAC8B /* TimeslotTVCell.swift */; };
-		03F66E561FEC637E005BAC8B /* TimeslotTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F66E541FEC637E005BAC8B /* TimeslotTVCell.xib */; };
+		03DBECBE1FFAA05400E5B271 /* IntroPickupSpotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBECBC1FFAA05400E5B271 /* IntroPickupSpotVC.swift */; };
+		03DBECBF1FFAA05400E5B271 /* IntroPickupSpotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DBECBD1FFAA05400E5B271 /* IntroPickupSpotVC.xib */; };
 		03F66E5C1FEC6648005BAC8B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F66E5B1FEC6648005BAC8B /* Util.swift */; };
 		03F9C8BE1FBFC56E00D84773 /* TimeslotAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C8BC1FBFC56E00D84773 /* TimeslotAnnotation.swift */; };
 		03F9C8BF1FBFC56E00D84773 /* TimeslotAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9C8BD1FBFC56E00D84773 /* TimeslotAnnotationView.swift */; };
@@ -102,6 +123,19 @@
 		031D813A1FBCCC710094F598 /* TimesTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimesTVCell.xib; sourceTree = "<group>"; };
 		031D813D1FBCCD000094F598 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		031D81431FBDFC400094F598 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		032882821FFC22290042DAA1 /* ViewTimeslotsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTimeslotsVC.swift; sourceTree = "<group>"; };
+		032882831FFC22290042DAA1 /* ViewTimeslotsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewTimeslotsVC.xib; sourceTree = "<group>"; };
+		032882861FFC30C20042DAA1 /* TimeslotsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotsTVCell.swift; sourceTree = "<group>"; };
+		032882871FFC30C20042DAA1 /* TimeslotsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeslotsTVCell.xib; sourceTree = "<group>"; };
+		0328828A1FFD24870042DAA1 /* TimeslotCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotCVCell.swift; sourceTree = "<group>"; };
+		0328828B1FFD24870042DAA1 /* TimeslotCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeslotCVCell.xib; sourceTree = "<group>"; };
+		0328828E1FFD2A400042DAA1 /* t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t.png; sourceTree = "<group>"; };
+		032882901FFD2A890042DAA1 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		032882921FFD2F230042DAA1 /* TimeslotsInWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotsInWindow.swift; sourceTree = "<group>"; };
+		032882941FFD716E0042DAA1 /* TimeRangeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangeHeaderView.swift; sourceTree = "<group>"; };
+		032882961FFD72D20042DAA1 /* TimeRangeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeRangeHeaderView.xib; sourceTree = "<group>"; };
+		032882D21FFD79210042DAA1 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		034DD8BD1FFBE0EA00BE0E71 /* Location+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Extensions.swift"; sourceTree = "<group>"; };
 		036DD2AF1FEB19F000160661 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		036DD2B11FEB1A1300160661 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		036DD2B31FEB1A2800160661 /* CircleArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleArea.swift; sourceTree = "<group>"; };
@@ -120,6 +154,14 @@
 		036DD2CE1FEB247500160661 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		036DD2D01FEBFE2400160661 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		036DD2D21FEC06E200160661 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		037AA3EC1FFBF04700932012 /* DayCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCVCell.swift; sourceTree = "<group>"; };
+		037AA3ED1FFBF04700932012 /* DayCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCVCell.xib; sourceTree = "<group>"; };
+		037AA3F01FFBFDE000932012 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		037AA3F21FFBFFDA00932012 /* SetDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDayVC.swift; sourceTree = "<group>"; };
+		037AA3F31FFBFFDA00932012 /* SetDayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetDayVC.xib; sourceTree = "<group>"; };
+		037AA3F61FFC006100932012 /* DaysCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCollectionVC.swift; sourceTree = "<group>"; };
+		037AA3F71FFC006100932012 /* DaysCollectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaysCollectionVC.xib; sourceTree = "<group>"; };
+		037AA3FC1FFC0D1B00932012 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		039E59131FBCA77500FE3598 /* EgglerPool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgglerPool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039E59161FBCA77500FE3598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039E591D1FBCA77500FE3598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,8 +200,8 @@
 		03CE87571FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPickupSpotFlowVC.xib; sourceTree = "<group>"; };
 		03CE875A1FEC46420006F8A6 /* TimeslotsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotsTVC.swift; sourceTree = "<group>"; };
 		03CE875B1FEC46420006F8A6 /* TimeslotsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeslotsTVC.xib; sourceTree = "<group>"; };
-		03F66E531FEC637E005BAC8B /* TimeslotTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeslotTVCell.swift; sourceTree = "<group>"; };
-		03F66E541FEC637E005BAC8B /* TimeslotTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeslotTVCell.xib; sourceTree = "<group>"; };
+		03DBECBC1FFAA05400E5B271 /* IntroPickupSpotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPickupSpotVC.swift; sourceTree = "<group>"; };
+		03DBECBD1FFAA05400E5B271 /* IntroPickupSpotVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroPickupSpotVC.xib; sourceTree = "<group>"; };
 		03F66E5B1FEC6648005BAC8B /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		03F9C8BC1FBFC56E00D84773 /* TimeslotAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeslotAnnotation.swift; sourceTree = "<group>"; };
 		03F9C8BD1FBFC56E00D84773 /* TimeslotAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeslotAnnotationView.swift; sourceTree = "<group>"; };
@@ -210,6 +252,7 @@
 				036DD2AF1FEB19F000160661 /* Ride.swift */,
 				036DD2B11FEB1A1300160661 /* Location.swift */,
 				03CE87541FEC3BE50006F8A6 /* TimeslotSearchForm.swift */,
+				032882921FFD2F230042DAA1 /* TimeslotsInWindow.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,13 +262,17 @@
 			children = (
 				036DD2BA1FEB1A8600160661 /* Int+Extensions.swift */,
 				036DD2BC1FEB1AB700160661 /* Date+Extensions.swift */,
+				032882901FFD2A890042DAA1 /* UIImageView+Extensions.swift */,
+				034DD8BD1FFBE0EA00BE0E71 /* Location+Extensions.swift */,
 				036DD2BE1FEB1AE100160661 /* UIViewController+Extensions.swift */,
 				036DD2C21FEB1B3600160661 /* CGRect+Extensions.swift */,
 				03CAB6751FF584B7007E7035 /* CGPoint+Extensions.swift */,
 				036DD2C01FEB1B0B00160661 /* UIView+Extensions.swift */,
 				03CAB67F1FF59280007E7035 /* GMSPlace+Extensions.swift */,
+				032882D21FFD79210042DAA1 /* Double+Extensions.swift */,
 				036DD2C41FEB1B7D00160661 /* MapView+Extensions.swift */,
 				036DD2C61FEB1BA300160661 /* CLLocationCoordinate2D+Extensions.swift */,
+				037AA3F01FFBFDE000932012 /* UICollectionViewCell+Extensions.swift */,
 				036DD2C81FEB1BBE00160661 /* NSObject+Extensions.swift */,
 				031D813D1FBCCD000094F598 /* UITableViewCell+Extensions.swift */,
 			);
@@ -237,6 +284,7 @@
 			children = (
 				03CAB6711FF581A8007E7035 /* car.png */,
 				03CAB6721FF581A8007E7035 /* egg.png */,
+				0328828E1FFD2A400042DAA1 /* t.png */,
 				039E59161FBCA77500FE3598 /* AppDelegate.swift */,
 				039E591D1FBCA77500FE3598 /* Assets.xcassets */,
 				039E591F1FBCA77500FE3598 /* LaunchScreen.storyboard */,
@@ -254,6 +302,32 @@
 				03CE87521FEC3A510006F8A6 /* HasMapView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		037AA3FA1FFC007200932012 /* Set Times */ = {
+			isa = PBXGroup;
+			children = (
+				031D81311FBCC8300094F598 /* SetTimeVC.swift */,
+				031D81321FBCC8300094F598 /* SetTimeVC.xib */,
+				031D81351FBCC8810094F598 /* TimesTableVC.swift */,
+				031D81361FBCC8810094F598 /* TimesTableVC.xib */,
+				031D81391FBCCC710094F598 /* TimesTVCell.swift */,
+				031D813A1FBCCC710094F598 /* TimesTVCell.xib */,
+			);
+			path = "Set Times";
+			sourceTree = "<group>";
+		};
+		037AA3FB1FFC007C00932012 /* Set Day */ = {
+			isa = PBXGroup;
+			children = (
+				037AA3F21FFBFFDA00932012 /* SetDayVC.swift */,
+				037AA3F31FFBFFDA00932012 /* SetDayVC.xib */,
+				037AA3F61FFC006100932012 /* DaysCollectionVC.swift */,
+				037AA3F71FFC006100932012 /* DaysCollectionVC.xib */,
+				037AA3EC1FFBF04700932012 /* DayCVCell.swift */,
+				037AA3ED1FFBF04700932012 /* DayCVCell.xib */,
+			);
+			path = "Set Day";
 			sourceTree = "<group>";
 		};
 		039E590A1FBCA77500FE3598 = {
@@ -340,12 +414,8 @@
 			children = (
 				039E59481FBCA89E00FE3598 /* TimeWindowVC.swift */,
 				039E59491FBCA89E00FE3598 /* TimeWindowVC.xib */,
-				031D81311FBCC8300094F598 /* SetTimeVC.swift */,
-				031D81321FBCC8300094F598 /* SetTimeVC.xib */,
-				031D81351FBCC8810094F598 /* TimesTableVC.swift */,
-				031D81361FBCC8810094F598 /* TimesTableVC.xib */,
-				031D81391FBCCC710094F598 /* TimesTVCell.swift */,
-				031D813A1FBCCC710094F598 /* TimesTVCell.xib */,
+				037AA3FA1FFC007200932012 /* Set Times */,
+				037AA3FB1FFC007C00932012 /* Set Day */,
 			);
 			path = Time;
 			sourceTree = "<group>";
@@ -361,12 +431,20 @@
 				03CE87451FEC18E90006F8A6 /* SearchLocationVC.xib */,
 				03CE87481FEC1BCD0006F8A6 /* SetDestinationFlowVC.swift */,
 				03CE87491FEC1BCD0006F8A6 /* SetDestinationFlowVC.xib */,
+				03DBECBC1FFAA05400E5B271 /* IntroPickupSpotVC.swift */,
+				03DBECBD1FFAA05400E5B271 /* IntroPickupSpotVC.xib */,
 				03CE87561FEC41E70006F8A6 /* SetPickupSpotFlowVC.swift */,
 				03CE87571FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib */,
+				032882821FFC22290042DAA1 /* ViewTimeslotsVC.swift */,
+				032882831FFC22290042DAA1 /* ViewTimeslotsVC.xib */,
 				03CE875A1FEC46420006F8A6 /* TimeslotsTVC.swift */,
 				03CE875B1FEC46420006F8A6 /* TimeslotsTVC.xib */,
-				03F66E531FEC637E005BAC8B /* TimeslotTVCell.swift */,
-				03F66E541FEC637E005BAC8B /* TimeslotTVCell.xib */,
+				032882861FFC30C20042DAA1 /* TimeslotsTVCell.swift */,
+				032882871FFC30C20042DAA1 /* TimeslotsTVCell.xib */,
+				0328828A1FFD24870042DAA1 /* TimeslotCVCell.swift */,
+				0328828B1FFD24870042DAA1 /* TimeslotCVCell.xib */,
+				032882941FFD716E0042DAA1 /* TimeRangeHeaderView.swift */,
+				032882961FFD72D20042DAA1 /* TimeRangeHeaderView.xib */,
 			);
 			path = "Set Location";
 			sourceTree = "<group>";
@@ -376,6 +454,7 @@
 			children = (
 				031D81431FBDFC400094F598 /* Config.swift */,
 				036DD2D21FEC06E200160661 /* Defaults.swift */,
+				037AA3FC1FFC0D1B00932012 /* Settings.swift */,
 				036DD2D01FEBFE2400160661 /* Color.swift */,
 				036DD2CE1FEB247500160661 /* MockData.swift */,
 				03CE87421FEC167A0006F8A6 /* Secrets.swift */,
@@ -516,6 +595,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DBECBF1FFAA05400E5B271 /* IntroPickupSpotVC.xib in Resources */,
+				037AA3EF1FFBF04700932012 /* DayCVCell.xib in Resources */,
+				032882891FFC30C20042DAA1 /* TimeslotsTVCell.xib in Resources */,
 				039E59211FBCA77500FE3598 /* LaunchScreen.storyboard in Resources */,
 				03CAB6691FF56FAA007E7035 /* StartVC.xib in Resources */,
 				03CE87471FEC18E90006F8A6 /* SearchLocationVC.xib in Resources */,
@@ -525,13 +607,18 @@
 				03CE875D1FEC46420006F8A6 /* TimeslotsTVC.xib in Resources */,
 				039E594B1FBCA89E00FE3598 /* TimeWindowVC.xib in Resources */,
 				036DD2CD1FEB1E2E00160661 /* SetSpotButtonsVC.xib in Resources */,
-				03F66E561FEC637E005BAC8B /* TimeslotTVCell.xib in Resources */,
+				037AA3F91FFC006100932012 /* DaysCollectionVC.xib in Resources */,
+				032882851FFC222A0042DAA1 /* ViewTimeslotsVC.xib in Resources */,
 				03CE87591FEC41E70006F8A6 /* SetPickupSpotFlowVC.xib in Resources */,
+				0328828F1FFD2A400042DAA1 /* t.png in Resources */,
 				03CAB6731FF581A8007E7035 /* car.png in Resources */,
 				03CAB6741FF581A8007E7035 /* egg.png in Resources */,
 				031D813C1FBCCC710094F598 /* TimesTVCell.xib in Resources */,
+				0328828D1FFD24870042DAA1 /* TimeslotCVCell.xib in Resources */,
 				03CAB67E1FF58C84007E7035 /* ShowAddressVC.xib in Resources */,
 				031D81381FBCC8810094F598 /* TimesTableVC.xib in Resources */,
+				032882971FFD72D20042DAA1 /* TimeRangeHeaderView.xib in Resources */,
+				037AA3F51FFBFFDA00932012 /* SetDayVC.xib in Resources */,
 				039E591E1FBCA77500FE3598 /* Assets.xcassets in Resources */,
 				039E59511FBCC11D00FE3598 /* SetSpotVC.xib in Resources */,
 			);
@@ -677,6 +764,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03CE87531FEC3A510006F8A6 /* HasMapView.swift in Sources */,
+				037AA3F11FFBFDE000932012 /* UICollectionViewCell+Extensions.swift in Sources */,
+				037AA3FD1FFC0D1B00932012 /* Settings.swift in Sources */,
+				037AA3F41FFBFFDA00932012 /* SetDayVC.swift in Sources */,
 				036DD2C91FEB1BBE00160661 /* NSObject+Extensions.swift in Sources */,
 				03CAB67D1FF58C84007E7035 /* ShowAddressVC.swift in Sources */,
 				031D813E1FBCCD000094F598 /* UITableViewCell+Extensions.swift in Sources */,
@@ -693,9 +783,12 @@
 				031D81331FBCC8300094F598 /* SetTimeVC.swift in Sources */,
 				039E594A1FBCA89E00FE3598 /* TimeWindowVC.swift in Sources */,
 				039E59171FBCA77500FE3598 /* AppDelegate.swift in Sources */,
+				037AA3EE1FFBF04700932012 /* DayCVCell.swift in Sources */,
+				037AA3F81FFC006100932012 /* DaysCollectionVC.swift in Sources */,
 				039E59501FBCC11D00FE3598 /* SetSpotVC.swift in Sources */,
 				036DD2C51FEB1B7D00160661 /* MapView+Extensions.swift in Sources */,
 				03CE87581FEC41E70006F8A6 /* SetPickupSpotFlowVC.swift in Sources */,
+				032882951FFD716E0042DAA1 /* TimeRangeHeaderView.swift in Sources */,
 				03CE87431FEC167A0006F8A6 /* Secrets.swift in Sources */,
 				036DD2BB1FEB1A8600160661 /* Int+Extensions.swift in Sources */,
 				036DD2B01FEB19F000160661 /* Ride.swift in Sources */,
@@ -706,7 +799,11 @@
 				036DD2C11FEB1B0B00160661 /* UIView+Extensions.swift in Sources */,
 				031D81371FBCC8810094F598 /* TimesTableVC.swift in Sources */,
 				031D81441FBDFC400094F598 /* Config.swift in Sources */,
-				03F66E551FEC637E005BAC8B /* TimeslotTVCell.swift in Sources */,
+				032882D31FFD79210042DAA1 /* Double+Extensions.swift in Sources */,
+				032882911FFD2A890042DAA1 /* UIImageView+Extensions.swift in Sources */,
+				032882881FFC30C20042DAA1 /* TimeslotsTVCell.swift in Sources */,
+				032882931FFD2F230042DAA1 /* TimeslotsInWindow.swift in Sources */,
+				034DD8BE1FFBE0EA00BE0E71 /* Location+Extensions.swift in Sources */,
 				03F9C8C11FBFC57E00D84773 /* TimeslotCircle.swift in Sources */,
 				036DD2B41FEB1A2800160661 /* CircleArea.swift in Sources */,
 				036DD2B81FEB1A5600160661 /* TimeWindow.swift in Sources */,
@@ -717,10 +814,13 @@
 				036DD2B61FEB1A3F00160661 /* User.swift in Sources */,
 				039E59541FBCC20600FE3598 /* TimeslotMapVC.swift in Sources */,
 				03CAB6761FF584B7007E7035 /* CGPoint+Extensions.swift in Sources */,
+				0328828C1FFD24870042DAA1 /* TimeslotCVCell.swift in Sources */,
 				03CE87551FEC3BE50006F8A6 /* TimeslotSearchForm.swift in Sources */,
 				036DD2D31FEC06E200160661 /* Defaults.swift in Sources */,
+				03DBECBE1FFAA05400E5B271 /* IntroPickupSpotVC.swift in Sources */,
 				036DD2CC1FEB1E2E00160661 /* SetSpotButtonsVC.swift in Sources */,
 				03F9C8BE1FBFC56E00D84773 /* TimeslotAnnotation.swift in Sources */,
+				032882841FFC222A0042DAA1 /* ViewTimeslotsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

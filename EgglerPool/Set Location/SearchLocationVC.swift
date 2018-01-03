@@ -8,8 +8,12 @@ class SearchLocationVC: UIViewController {
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}
     override var nibName: String? { return String(describing: type(of: self)) }
     init(title: String = "Search Location",
+         searchStarting: Callback? = nil,
+         searchDone: Callback? = nil,
          placeSelectedCallback: @escaping (GMSPlace) -> ()) {
         self.titleForLabel = title
+        self.searchStarting = searchStarting
+        self.searchDone = searchDone
         self.placeSelectedCallback = placeSelectedCallback
         super.init(nibName: nil, bundle:nil)
     }
@@ -17,27 +21,27 @@ class SearchLocationVC: UIViewController {
     //MARK: - Properties
     private let titleForLabel: String
     private let placeSelectedCallback: (GMSPlace) -> ()
+    private let searchStarting: Callback?
+    private let searchDone: Callback?
     
     //MARK: - Google Places Properties
-    lazy var resultsViewController: GMSAutocompleteResultsViewController = {
+    private lazy var resultsViewController: GMSAutocompleteResultsViewController = {
         let resultsVC = GMSAutocompleteResultsViewController()
-        let filter = GMSAutocompleteFilter()
-        filter.type = .address
-        resultsVC.autocompleteFilter = filter
         resultsVC.delegate = self
         //bound results to united states
         resultsVC.autocompleteBounds = GMSCoordinateBounds(coordinate: CLLocationCoordinate2DMake(-172.265625, 18.1458517717),
                                                            coordinate: CLLocationCoordinate2DMake(-56.6015625, 52.3755991767))
         return resultsVC
     }()
-    lazy var searchController: UISearchController = {
+    private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: resultsViewController)
         searchController.searchResultsUpdater = resultsViewController
+        searchController.delegate = self
         return searchController
     }()
     
     //MARK: - Outlets
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak private var titleLabel: UILabel!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -61,6 +65,18 @@ extension SearchLocationVC: GMSAutocompleteResultsViewControllerDelegate {
                            didFailAutocompleteWithError error: Error){
         // TODO: handle the error.
         print("Error: ", error.localizedDescription)
+    }
+}
+
+//MARK: - Search Controller Delegate
+extension SearchLocationVC: UISearchControllerDelegate {
+    
+    func willPresentSearchController(_ searchController: UISearchController) {
+        searchStarting?()
+    }
+    
+    func didDismissSearchController(_ searchController: UISearchController) {
+        searchDone?()
     }
 }
 

@@ -32,11 +32,12 @@ class SetSpotVC: UIViewController, LocationManager {
         manager.desiredAccuracy = kCLLocationAccuracyBest
         return manager
     }()
+    private var initialLocationSet = false
     
     //MARK: - Outlets
-    @IBOutlet weak var timeRangeView: UIView!
-    @IBOutlet weak var timeslotMapView: UIView!
-    @IBOutlet weak var setSpotButtonsView: UIView!
+    @IBOutlet weak private var timeRangeView: UIView!
+    @IBOutlet weak private var timeslotMapView: UIView!
+    @IBOutlet weak private var setSpotButtonsView: UIView!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -60,11 +61,13 @@ class SetSpotVC: UIViewController, LocationManager {
     }()
     
     private lazy var timeWindowVC: TimeWindowVC = {
-        return TimeWindowVC(timeRangeTitle: Date().addDays(1).string("EEE, MMM d"),
-                            earliest: Date().startOfDay.addHours(6),
-                            latest: Date().startOfDay.addHours(8),
-                            setEarliestButtonPressed: { self.presentDark(vc: self.earliestVC, frame: self.earliestVCFrame) },
-                            setLatestButtonPressed: { self.presentDark(vc: self.latestVC, frame: self.latestVCFrame) })
+        TimeWindowVC(timeRangeTitle: Defaults.startDay.string("EEE, MMM d"),
+                     day: Defaults.startDay,
+                     earliest: Defaults.startDay.addHours(6),
+                     latest: Defaults.startDay.addHours(8),
+                     setDayButtonPressed: { self.presentDark(vc: self.dayVC, frame: self.dayVCFrame) },
+                     setEarliestButtonPressed: { self.presentDark(vc: self.earliestVC, frame: self.earliestVCFrame) },
+                     setLatestButtonPressed: { self.presentDark(vc: self.latestVC, frame: self.latestVCFrame) })
     }()
 }
 
@@ -76,8 +79,12 @@ extension SetSpotVC {
     }
     
     private func updateLocation(_ location: CLLocationCoordinate2D) {
-        timeslotMapVC.moveTo(location: location, zoomLevel: spotType.mapZoomLevel)
-        timeslotMapVC.showTimeslotsOnMap(MockData.generateMockTimeslots(location: location, count: 8))
+        //zoom for inital location setting, but not otherwise
+        let zoomLevel: MapZoomLevel? = initialLocationSet ? nil : spotType.mapZoomLevel
+        timeslotMapVC.moveTo(location: location, zoomLevel: zoomLevel)
+        initialLocationSet = true
+        let timeslots = MockData.generateMockTimeslots(coordinate: location, count: 5)
+        timeslotMapVC.showTimeslotsOnMap(timeslots)
     }
     
     private func setSpotPressed() {
@@ -98,30 +105,43 @@ extension SetSpotVC {
 //MARK: - Set Time VCs
 extension SetSpotVC {
     
+    private var dayVCFrame: CGRect {
+        return view.frame.adjust(heightTo: 100).adjust(xBy: 8,
+                                                       yBy: 50,
+                                                       widthBy: -16)
+    }
+    
     private var earliestVCFrame: CGRect {
-        return self.view.frame.adjust(widthTo: 150).adjust(xBy: 50,
-                                                           yBy: 50,
-                                                           heightBy: -100)
+        return view.frame.adjust(widthTo: 150).adjust(xBy: 50,
+                                                      yBy: 50,
+                                                      heightBy: -100)
     }
     
     private var latestVCFrame: CGRect {
-        return self.view.frame.adjust(widthTo: 150).adjust(xBy: self.view.frame.width - 200,
-                                                           yBy: 50,
-                                                           heightBy: -100)
+        return view.frame.adjust(widthTo: 150).adjust(xBy: view.frame.width - 200,
+                                                      yBy: 50,
+                                                      heightBy: -100)
+    }
+    
+    private var dayVC: SetDayVC {
+        return SetDayVC(startDate: Defaults.startDay,
+                        endDate: Defaults.lastDay) { newDay in
+                            self.timeWindowVC.day = newDay
+        }
     }
     
     private var earliestVC: SetTimeVC {
         return SetTimeVC(titleForLabel: "Earliest",
-                         minDate: Date().startOfDay.addHours(5),
-                         maxDate: self.timeWindowVC.earliest) { newEarliest in
+                         minDate: timeWindowVC.day.startOfDay,
+                         maxDate: timeWindowVC.latest) { newEarliest in
                             self.timeWindowVC.earliest = newEarliest
         }
     }
     
     private var latestVC: SetTimeVC {
         return SetTimeVC(titleForLabel: "Latest",
-                         minDate: self.timeWindowVC.earliest.addMinutes(15),
-                         maxDate: Date().addDays(1).startOfDay.addHours(-2)) { newLatest in
+                         minDate: timeWindowVC.earliest.addMinutes(15),
+                         maxDate: timeWindowVC.day.addDays(1).startOfDay.addMinutes(-15)) { newLatest in
                             self.timeWindowVC.latest = newLatest
         }
     }

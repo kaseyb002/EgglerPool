@@ -15,18 +15,15 @@ class ShowAddressVC: UIViewController {
     private let location: Location
     
     //MARK: - Outlets
-    @IBOutlet weak var streetAddressLabel: UILabel!
-    @IBOutlet weak var cityStateZipLabel: UILabel!
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak private var streetAddressLabel: UILabel!
+    @IBOutlet weak private var cityStateZipLabel: UILabel!
+    @IBOutlet weak private var mapView: MKMapView!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         updateAddress()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        updateMap()//will crash if we call it before appearing
+        updateMap()
     }
 }
 
@@ -34,8 +31,9 @@ class ShowAddressVC: UIViewController {
 extension ShowAddressVC {
     
     private func updateAddress() {
-        streetAddressLabel.text = location.streetAddress
-        cityStateZipLabel.text = location.city + ", " + location.state
+        streetAddressLabel.text = location.streetAddress ?? location.formattedAddress
+        cityStateZipLabel.text = location.cityState
+        cityStateZipLabel.isHidden = location.cityState == nil
     }
     
     private func updateMap() {
@@ -43,7 +41,7 @@ extension ShowAddressVC {
         point.coordinate = location.coordinate
         mapView.addAnnotation(point)
         mapView.moveTo(location: location.coordinate,
-                       metersZoomed: MapZoomLevel.streetLevel.rawValue)
+                       metersZoomed: MapZoomLevel.neighborhoodLevel.rawValue)
     }
 }
 

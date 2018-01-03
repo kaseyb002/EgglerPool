@@ -18,10 +18,11 @@ class SetDestinationFlowVC: UIViewController {
         }
     }
     
+    
     //MARK: - Outlets
-    @IBOutlet weak var searchLocationView: UIView!
-    @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var showAddressView: UIView!
+    @IBOutlet weak private var searchLocationView: UIView!
+    @IBOutlet weak private var nextButton: UIButton!
+    @IBOutlet weak private var showAddressView: UIView!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -49,8 +50,15 @@ class SetDestinationFlowVC: UIViewController {
     
     //MARK: - Child VCs
     private lazy var searchLocationVC: SearchLocationVC = {
-        return SearchLocationVC(title: "Where would you like to go?") { place in
-            self.selectedLocation = place.location
+        let searchStart: Callback = {
+            self.showAddressView.isHidden = true
+            self.nextButton.isHidden = true
+        }
+        let searchDone: Callback = { self.updateAddress() }
+        return SearchLocationVC(title: "Where to?",
+                                searchStarting: searchStart,
+                                searchDone: searchDone) { place in
+                                    self.selectedLocation = place.location
         }
     }()
 }
@@ -77,7 +85,7 @@ extension SetDestinationFlowVC {
     private func goToConfirmDestination(location: Location) {
         var searchForm = TimeslotSearchForm()
         searchForm.destination = location
-        let vc = SetPickupSpotFlowVC(searchForm: searchForm)
+        let vc = IntroPickupSpotVC(searchForm: searchForm)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

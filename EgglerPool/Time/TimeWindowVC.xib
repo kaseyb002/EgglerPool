@@ -68,6 +68,9 @@
                     <state key="normal" title="Fri, Oct 13">
                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="setDayButtonPressed:" destination="-1" eventType="touchUpInside" id="9Z6-54-74M"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>

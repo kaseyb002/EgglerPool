@@ -30,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tpX-eL-1Cz">
-                    <rect key="frame" x="8" y="65" width="429" height="150"/>
+                    <rect key="frame" x="0.0" y="73" width="445" height="150"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="Iyh-z8-TXC"/>
                     </constraints>
@@ -55,11 +55,11 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="tpX-eL-1Cz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="4Xc-kW-WrF"/>
+                <constraint firstItem="tpX-eL-1Cz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Xc-kW-WrF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sb8-lm-iAM" secondAttribute="trailing" constant="8" id="EYl-18-CbS"/>
                 <constraint firstItem="Sb8-lm-iAM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Qqg-cF-V9c"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tpX-eL-1Cz" secondAttribute="trailing" constant="8" id="bDk-PV-FYz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tpX-eL-1Cz" secondAttribute="bottom" constant="8" id="j19-KV-QJv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tpX-eL-1Cz" secondAttribute="trailing" id="bDk-PV-FYz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tpX-eL-1Cz" secondAttribute="bottom" id="j19-KV-QJv"/>
                 <constraint firstItem="Sb8-lm-iAM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="mlB-Va-bnW"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

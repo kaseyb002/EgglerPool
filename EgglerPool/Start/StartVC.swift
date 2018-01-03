@@ -11,13 +11,13 @@ class StartVC: UIViewController {
     }
     
     //MARK: - Outlets
-    @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var car: UIImageView!
-    @IBOutlet weak var driverEgg: UIImageView!
-    @IBOutlet weak var shotgunEgg: UIImageView!
-    @IBOutlet weak var backseatEgg: UIImageView!
+    @IBOutlet weak private var startButton: UIButton!
+    @IBOutlet weak private var car: UIImageView!
+    @IBOutlet weak private var driverEgg: UIImageView!
+    @IBOutlet weak private var shotgunEgg: UIImageView!
+    @IBOutlet weak private var backseatEgg: UIImageView!
     
-    @IBOutlet var imagesThatMove: [UIImageView]!
+    @IBOutlet private var imagesThatMove: [UIImageView]!
     
     override var prefersStatusBarHidden: Bool { return true }
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
@@ -51,7 +51,7 @@ extension StartVC {
     
     private func goToSetDestination() {
         let nav = UINavigationController(rootViewController: SetDestinationFlowVC())
-        nav.modalTransitionStyle = .crossDissolve
+        //nav.modalTransitionStyle = .crossDissolve
         present(nav, animated: true, completion: nil)
     }
 }
@@ -63,16 +63,17 @@ extension StartVC {
         imagesThatMove.forEach { $0.isHidden = false }
         self.shotgunEgg.frame = self.shotgunEgg.frame.adjust(xTo: centerScreen.x - 10, yTo: -80)
         self.backseatEgg.frame = self.backseatEgg.frame.adjust(xTo: centerScreen.x - 60, yTo: -80)
+        startButton.alpha = 0.0
     }
     
     private func runIntroAnimation() {
-        UIView.animate(withDuration: 1.2) {
+        UIView.animate(withDuration: 1.0) {
             self.shotgunEgg.frame = self.shotgunEgg.frame.adjust(yTo: centerScreen.y - 40)
         }
+        let dropBackseatEgg = { self.backseatEgg.frame = self.backseatEgg.frame.adjust(yTo: centerScreen.y - 40) }
+        let fadeInStartButton: (Bool) -> () = { _ in UIView.animate(withDuration: 0.5, animations: { self.startButton.alpha = CGFloat(1.0) }) }
         call(after: 0.5) {
-            UIView.animate(withDuration: 1.2) {
-                self.backseatEgg.frame = self.backseatEgg.frame.adjust(yTo: centerScreen.y - 40)
-            }
+            UIView.animate(withDuration: 1.0, animations: dropBackseatEgg, completion: fadeInStartButton)
         }
     }
     

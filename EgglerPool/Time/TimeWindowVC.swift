@@ -6,19 +6,31 @@ class TimeWindowVC: UIViewController {
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}
     override var nibName: String? { return "TimeWindowVC" }
     init(timeRangeTitle: String,
+         day: Date,
          earliest: Date,
          latest: Date,
-         setEarliestButtonPressed: @escaping () -> (),
-         setLatestButtonPressed: @escaping () -> ()) {
+         setDayButtonPressed: @escaping Callback,
+         setEarliestButtonPressed: @escaping Callback,
+         setLatestButtonPressed: @escaping Callback) {
         self.timeRangeTitle = timeRangeTitle
+        self.day = day
         self.earliest = earliest
         self.latest = latest
+        self.setDayButtonPressed = setDayButtonPressed
         self.setEarliestButtonPressed = setEarliestButtonPressed
         self.setLatestButtonPressed = setLatestButtonPressed
         super.init(nibName: nil, bundle:nil)
     }
 
     //MARK: - Properties
+    var day: Date {
+        didSet {
+            updateDay(withDate: day)
+            //update times to make sure they're in sync
+            earliest = earliest.update(toDay: day)
+            latest = latest.update(toDay: day)
+        }
+    }
     var earliest: Date {
         didSet {
             updateEarliestTime(withDate: earliest)
@@ -30,14 +42,15 @@ class TimeWindowVC: UIViewController {
         }
     }
     private let timeRangeTitle: String
-    private let setEarliestButtonPressed: () -> ()
-    private let setLatestButtonPressed: () -> ()
+    private let setDayButtonPressed: Callback
+    private let setEarliestButtonPressed: Callback
+    private let setLatestButtonPressed: Callback
     
     //MARK: - Outlets
-    @IBOutlet weak var dayButton: UIButton!
-    @IBOutlet weak var setEarliestButton: UIButton!
-    @IBOutlet weak var setLatestButton: UIButton!
-    @IBOutlet weak var middleBar: UIView!
+    @IBOutlet weak private var dayButton: UIButton!
+    @IBOutlet weak private var setEarliestButton: UIButton!
+    @IBOutlet weak private var setLatestButton: UIButton!
+    @IBOutlet weak private var middleBar: UIView!
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -46,7 +59,7 @@ class TimeWindowVC: UIViewController {
         setLatestButton.layer.cornerRadius = 8
         dayButton.layer.cornerRadius = 8
         middleBar.layer.cornerRadius = 1
-        updateDay(withDate: earliest)
+        updateDay(withDate: day)
         updateEarliestTime(withDate: earliest)
         updateLatestTime(withDate: latest)
         setEarliestButton.drawShadow()
@@ -55,6 +68,10 @@ class TimeWindowVC: UIViewController {
     }
     
     //MARK: - Actions
+    @IBAction func setDayButtonPressed(_ sender: UIButton) {
+        setDayButtonPressed()
+    }
+    
     @IBAction func setEarliestButtonPressed(_ sender: UIButton) {
         setEarliestButtonPressed()
     }

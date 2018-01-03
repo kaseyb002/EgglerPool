@@ -3,7 +3,7 @@ import UIKit
 class TimesTVCell: UITableViewCell {
     
     //MARK: - Outlets
-    @IBOutlet weak var timesLabel: UILabel!
+    @IBOutlet weak private var timesLabel: UILabel!
 }
 
 //MARK: - Update UI

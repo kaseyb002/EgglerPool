@@ -7,4 +7,3 @@ struct TimeslotSearchForm {
     var earliest: Date?
     var latest: Date?
 }
-

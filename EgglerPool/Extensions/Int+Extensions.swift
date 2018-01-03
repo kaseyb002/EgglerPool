@@ -11,11 +11,15 @@ extension Int {
     }
 }
 
-var randomBool: Bool { return randomBetween(min: 0, max: 50) > 25 }
+var randomBool: Bool { return randomBetween(min: 1, max: 10) > 5 }
 
 var randomNegative: Int { return randomBool ? 1 : -1 }
 
 //MARK: - Getting Random Numbers
 func randomBetween(min: UInt32, max: UInt32) -> UInt32 {//from SO
     return arc4random_uniform(max - min) + min
+}
+
+func randomBetween(min: Int, max: Int) -> Int {
+    return Int(randomBetween(min: UInt32(min), max: UInt32(max)))
 }

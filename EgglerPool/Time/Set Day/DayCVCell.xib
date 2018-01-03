@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DayCVCell" id="gTV-IL-0wX" customClass="DayCVCell" customModule="EgglerPool" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afW-4u-R8y">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tm8-Aa-sth">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHt-AE-SlW">
+                                        <rect key="frame" x="8" y="8" width="30.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfP-c2-CUZ">
+                                        <rect key="frame" x="8" y="38.5" width="25" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbm-SM-bub">
+                                        <rect key="frame" x="36" y="30.5" width="26" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wHt-AE-SlW" firstAttribute="leading" secondItem="Tm8-Aa-sth" secondAttribute="leading" constant="8" id="8xX-J6-RX7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qbm-SM-bub" secondAttribute="bottom" constant="8" id="HfG-Kv-Im4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qbm-SM-bub" secondAttribute="trailing" constant="8" id="JQX-BG-Vmm"/>
+                                    <constraint firstItem="EfP-c2-CUZ" firstAttribute="leading" secondItem="Tm8-Aa-sth" secondAttribute="leading" constant="8" id="Mza-V2-fsb"/>
+                                    <constraint firstAttribute="bottom" secondItem="EfP-c2-CUZ" secondAttribute="bottom" constant="12" id="THh-L2-Jnt"/>
+                                    <constraint firstItem="wHt-AE-SlW" firstAttribute="top" secondItem="Tm8-Aa-sth" secondAttribute="top" constant="8" id="bV8-Ba-X8w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tm8-Aa-sth" firstAttribute="leading" secondItem="afW-4u-R8y" secondAttribute="leading" id="MXT-Ic-dYn"/>
+                            <constraint firstAttribute="bottom" secondItem="Tm8-Aa-sth" secondAttribute="bottom" id="Xel-yk-D8D"/>
+                            <constraint firstAttribute="trailing" secondItem="Tm8-Aa-sth" secondAttribute="trailing" id="bBx-tu-O4l"/>
+                            <constraint firstItem="Tm8-Aa-sth" firstAttribute="top" secondItem="afW-4u-R8y" secondAttribute="top" id="o1K-PS-aOb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="afW-4u-R8y" secondAttribute="trailing" id="P22-pp-AUd"/>
+                <constraint firstItem="afW-4u-R8y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bnx-na-QFJ"/>
+                <constraint firstItem="afW-4u-R8y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c6w-Ye-Xg3"/>
+                <constraint firstAttribute="bottom" secondItem="afW-4u-R8y" secondAttribute="bottom" id="kxc-vh-7Cz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="102" height="93"/>
+            <connections>
+                <outlet property="calDayLabel" destination="Qbm-SM-bub" id="tcK-mP-qe5"/>
+                <outlet property="monthLabel" destination="EfP-c2-CUZ" id="lCb-7a-Li5"/>
+                <outlet property="myView" destination="Tm8-Aa-sth" id="GGq-ij-Xgw"/>
+                <outlet property="weekdayLabel" destination="wHt-AE-SlW" id="cKe-Vn-gML"/>
+            </connections>
+            <point key="canvasLocation" x="-177" y="23.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
